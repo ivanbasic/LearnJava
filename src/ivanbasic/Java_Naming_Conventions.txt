@@ -1,0 +1,6 @@
+Packages  : com.sun.eng
+Classes   : class ImageSprite; nouns, whole words
+Interfaces: interface RasterDelegate;
+methods   : runFast(); 
+Variables : int ii; float myWidth; 
+Constants : static final int MIN_WIDTH = 4;

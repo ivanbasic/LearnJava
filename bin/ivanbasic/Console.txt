@@ -1,0 +1,848 @@
+LEARNING JAVA 07-14
+dynamic call's
+
+Lesson CreatingObjects, 
+Inside static Initializer Block, field, cStatic=static initializer, always FIRST
+Lesson ClassInitialization, A, stStr=stat.Str
+Lesson ClassInitialization, B
+Lesson ClassInitialization, C
+
+===============================================================
+Lesson #1 ivanbasic.java_11_00_001_HelloWorld
+===============================================================
+Hello World!
+
+===============================================================
+Lesson #2 ivanbasic.java_11_00_002_Version
+===============================================================
+14.0.1
+
+===============================================================
+Lesson #3 ivanbasic.java_11_01_001_WelcomeToJava
+===============================================================
+random 0-9: 9
+java.utl.Date: Wed Mar 17 20:35:36 CET 2021
+java.sql.Date: 1970-01-01
+ivanbasic.FieldsAndMethodsCanGoInEitherOrder@33833882
+
+===============================================================
+Lesson #4 ivanbasic.java_11_02_001_CreatingObjects
+===============================================================
+Creating Objects. Order of Initialization
+1. Block, field cPrivate=setting field
+1. Block, field cStatic=static initializer, always FIRST
+2. Block, field cPrivate=block
+2. Block, field cStatic=block
+constructor, always the last, cPrivate=constructor
+constructor, always the last, cStatic=constructor
+
+===============================================================
+Lesson #5 ivanbasic.java_11_02_002_ThePrimitiveTypes
+===============================================================
+MIN_VALUE MAX_VALUE
+
+boolean false   true
+byte 	-128   127
+short 	-32768   32767
+int 	-2147483648   2147483647
+long 	-9223372036854775808   9223372036854775807
+float 	1.4E-45   3.4028235E38
+double 	4.9E-324   1.7976931348623157E308
+char    0   65535
+
+BYTES
+
+boolean -
+byte 	1
+short 	2
+int 	4
+long 	8
+float 	4
+double 	8
+char    2
+
+===============================================================
+Lesson #6 ivanbasic.java_11_02_003_Literals
+===============================================================
+By default, Java assumes you are defining an int value with a numeric literal
+10.0 - Java assumes you are defining an double?  YES
+Integer as bin, oct, hex:
+15
+15
+15
+Literals and the Underscore Character
+
+===============================================================
+Lesson #7 ivanbasic.java_11_02_004_PrimitivesAgain
+===============================================================
+
+char
+char 65=A
+
+boolean
+
+byte
+
+short
+
+short again
+ (short) 32767+1 = -32768
+
+int
+2147483647+2147483647=-2
+
+long
+max+max, lo=-2
+max-1, lo=9223372036854775806
+
+float
+3.4028235E38+3.4028235E38=Infinity
+Infinity-1=Infinity
+Infinity-Infinity=NaN
+
+double
+1.7976931348623157E308+1.7976931348623157E308=Infinity
+
+===============================================================
+Lesson #8 ivanbasic.java_11_02_010_ReferenceTypes
+===============================================================
+Wed Mar 17 20:35:36 CET 2021
+How are you?
+null
+
+===============================================================
+Lesson #9 ivanbasic.java_11_02_020_var
+===============================================================
+Only local variabes, declared and initialized, only one by one.
+
+===============================================================
+Lesson #10 ivanbasic.java_11_03_001_Operators
+===============================================================
+Nothing new
+
+===============================================================
+Lesson #11 ivanbasic.java_11_04_000_MakingDecisions
+===============================================================
+0, 0, 0
+1, -2, 3
+2, -4, 6
+3, -6, 9
+4, -8, 12
+
+===============================================================
+Lesson #12 ivanbasic.java_11_05_010_Strings
+===============================================================
+01234567890123
+length=14
+charAt(0)=0
+charAt(6)=6
+indexOf('0')=0
+indexOf('0',10)=10
+indexOf('0',12)=-1
+indexOf('890' )=8
+substring(0  )=01234567890123
+substring(2,5  )=234
+startsWith("123"  )=true
+endsWith("123"  )=true
+replace( "12", ".."  )=0..34567890..3
+
+"  ???????  "
+trim(str  )=???????
+strip(str  )=???????
+
+===============================================================
+Lesson #13 ivanbasic.java_11_05_020_StringBuilder
+===============================================================
+abcdefghijklmnopqrstuvwxyz
+
+abc
+
+
+===============================================================
+Lesson #14 ivanbasic.java_11_05_030_TheStringPool
+===============================================================
+true
+
+===============================================================
+Lesson #15 ivanbasic.java_11_05_040_Arrays
+===============================================================
+[42, -55, 99]
+[[10, 20], [100, -200]]
+
+===============================================================
+Lesson #16 ivanbasic.java_11_05_050_ArrayList
+===============================================================
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+ArrayList implements an interface called List
+[0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+Using Varargs to Create a List
+[new]
+[one, two]
+
+===============================================================
+Lesson #17 ivanbasic.java_11_05_060_Sets
+===============================================================
+Set of Integer's
+true
+false
+true
+false
+2
+[1, 2]
+
+Set of Anything's
+true
+true
+true
+[ivanbasic.Anything@3b22cdd0, ivanbasic.Anything@5fdef03a, ivanbasic.Anything@5680a178]
+
+Set of Something's, overrides java.lang.Object.hashCode, overrides java.lang.Object.equals 
+true
+false
+true
+false
+[1, 2]
+
+===============================================================
+Lesson #18 ivanbasic.java_11_05_070_Maps
+===============================================================
+koala bamboo
+cat bird
+cow grass
+{koala=bamboo, cat=bird, cow=grass}
+{ivanbasic.AnythingAgain@4d591d15=202, ivanbasic.AnythingAgain@1e81f4dc=102}
+
+===============================================================
+Lesson #19 ivanbasic.java_11_06_010_Lambdas
+===============================================================
+TraditionalSearch, print if Hopper
+kangaroo rabbit 
+
+Lambda Search, print if Hopper
+kangaroo rabbit 
+Lambda Search, print can Swim
+fish turtle 
+Lambda Search, print can't Swim
+kangaroo rabbit 
+
+LambdaSearchTwo, print if Hopper
+kangaroo rabbit 
+
+===============================================================
+Lesson #20 ivanbasic.java_11_06_020_Predicate
+===============================================================
+fish me 
+fish me 
+fish me 
+
+===============================================================
+Lesson #21 ivanbasic.java_11_06_030_Consumer
+===============================================================
+The Consumer functional interface: void accept(T t)
+1
+accepting *2
+accepting *2
+accepting *2
+8
+accepting *3
+24
+accepting more *7, *8
+1344
+
+===============================================================
+Lesson #22 ivanbasic.java_11_06_040_Supplier
+===============================================================
+random #1 = 0
+random #2 = 4
+random #3 = 3
+random #4 = 0
+random #5 = 8
+
+===============================================================
+Lesson #23 ivanbasic.java_11_06_050_Comparator
+===============================================================
+Compare 11 & 17 :-6
+
+===============================================================
+Lesson #24 ivanbasic.java_11_06_060_CallingAPIsWithLambdas
+===============================================================
+List and Set declare a removeIf() method that takes a Predicate (boolean)
+[long ear, floppy, hoppy]
+[hoppy]
+
+sort (int)
+[long ear, floppy, hoppy, a, z]
+[a, floppy, hoppy, long ear, z]
+and reverse:
+[z, long ear, hoppy, floppy, a]
+
+forEach(), Consumer, void accept(T t)
+long ear
+floppy
+hoppy
+
+===============================================================
+Lesson #25 ivanbasic.java_11_07_030_WorkingWithVarargs
+===============================================================
+walk(int start, int... nums), length of nums:
+0
+1
+2
+2
+
+===============================================================
+Lesson #26 ivanbasic.java_11_07_050_PassingDataAmongMethods
+===============================================================
+int       parInt	=1
+String    parString	=a
+int[]     parArray	=[1, 2]
+SomeClass parClass	=2
+passing data among methods... PassingWithoutChange
+int       parInt	=1
+String    parString	=a
+int[]     parArray	=[1, 2]
+SomeClass parClass	=2
+passing data among methods... PassingWithChange
+int       parInt	=1
+String    parString	=a
+int[]     parArray	=[12345678, 2]
+SomeClass parClass	=9999999
+
+===============================================================
+Lesson #27 ivanbasic.java_11_07_070_OverloadingMethods
+===============================================================
+142
+===============================================================
+Lesson #28 ivanbasic.java_11_07_090_EncapsulatingData
+===============================================================
+Just private, getter & setter 
+
+===============================================================
+Lesson #29 ivanbasic.java_11_08_010_This
+===============================================================
+The color is desolate
+
+===============================================================
+Lesson #30 ivanbasic.java_11_08_020_Super
+===============================================================
+child doIt
+parent doIt
+child size
+parent size
+
+===============================================================
+Lesson #31 ivanbasic.java_11_08_025_ConsCallsConsThis
+===============================================================
+Cons II 1 0
+CONS I
+Cons II 1 2
+
+===============================================================
+Lesson #32 ivanbasic.java_11_08_030_PrivateConstructor
+===============================================================
+Calling private constructor 789+AAAAAA
+...from public cons
+Calling private constructor 11111+XYZUV
+...from public cons
+from (static) method:
+Calling private constructor 45+MN
+
+===============================================================
+Lesson #33 ivanbasic.java_11_08_035_SuperCons
+===============================================================
+first
+second
+
+===============================================================
+Lesson #34 ivanbasic.java_11_08_100_ClassInitialization
+===============================================================
+
+===============================================================
+Lesson #35 ivanbasic.java_11_08_110_InstanceInitialization
+===============================================================
+Creating new InstanceC extends InstanceB extends InstanceA
+Constructor, InstanceA
+Constructor, InstanceB
+Constructor, InstanceC
+
+===============================================================
+Lesson #36 ivanbasic.java_11_08_500_OverridingMethod
+===============================================================
+Number Of Humps = 1
+Number Of Humps = 2
+Number Of Humps = 2
+
+===============================================================
+Lesson #37 ivanbasic.java_11_08_510_OverridingGenericMethod
+===============================================================
+Anteater
+
+===============================================================
+Lesson #38 ivanbasic.java_11_08_520_GenericReturnTypes
+===============================================================
+
+===============================================================
+Lesson #39 ivanbasic.java_11_08_530_RedeclaringPrivateMethods
+===============================================================
+private doIt, PrivateAny.
+private doIt, PrivateRyan. A Separate and independent method. Not an overridden version.
+
+===============================================================
+Lesson #40 ivanbasic.java_11_08_540_HidingStaticMethods
+===============================================================
+You can't mix static and non-static methods
+public static void doIt() Bear
+public static void doIt() Panda. >>Hiding<<. Tis is not considered an overridden method. 
+
+===============================================================
+Lesson #41 ivanbasic.java_11_08_900_ReviewQuestions
+===============================================================
+50
+SpiderSpiderArthropod
+tacbf
+
+abcdef
+
+Child method setName=Webby
+Child method setName=Olivia
+Olivia Sophia
+
+
+Class1 c11 ivanbasic.Class1@707f7052
+method doIt Class1
+instanceVariable Class1
+
+Class1 c12 ivanbasic.Class2@11028347
+method doIt Class2
+instanceVariable Class1
+
+Class2 c22 ivanbasic.Class2@14899482
+method doIt Class2
+instanceVariable Class2
+
+casting c22....
+Class1 c100 ivanbasic.Class2@14899482
+method doIt Class2
+instanceVariable Class1
+
+
+===============================================================
+Lesson #42 ivanbasic.java_11_09_100_AbstractClasses
+===============================================================
+Constructor AbstractSub0 ivanbasic.Concrete0@21588809
+Constructor AbstractSub0 ivanbasic.Concrete1@2aae9190
+
+===============================================================
+Lesson #43 ivanbasic.java_11_09_200_Interfaces
+===============================================================
+doIt is implemented.
+default method
+static method
+static field of TheInterface
+interface ti instanceof class ChildOf? true
+
+===============================================================
+Lesson #44 ivanbasic.java_11_09_900_ReviewQuestions
+===============================================================
+
+===============================================================
+Lesson #45 ivanbasic.java_11_10_100_Exceptions
+===============================================================
+
+===============================================================
+Lesson #46 ivanbasic.java_11_10_200_Exceptions
+===============================================================
+try 2
+finally 2
+try 11
+catch 11
+finally 11
+
+try 11
+finally 11
+
+the compiler replaces a try-with-resources block with a try and finally block
+This catch block is optional
+This finally block is optional
+
+===============================================================
+Lesson #47 ivanbasic.java_11_11_100_Modules
+===============================================================
+eclipse: project root >configure>create module-info.java 
+
+exports pckg (to  mdl) 
+requires, requires transitive mdl
+
+===============================================================
+Lesson #48 ivanbasic.java_11_21_100_Enums
+===============================================================
+SUMMER 2
+
+WINTER 0
+SPRING 1
+SUMMER 2
+FALL 3
+
+
+===============================================================
+Lesson #49 ivanbasic.java_11_21_110_UsingEnumsInSwitchStatements
+===============================================================
+default
+
+===============================================================
+Lesson #50 ivanbasic.java_11_21_120_EnumConstructor
+===============================================================
+the constructor argument list match the declaration-of-constants argument list.
+but Selikoff didn't explain why
+
+===============================================================
+Lesson #51 ivanbasic.java_11_21_200_NestedClasses4Flavors
+===============================================================
+constructor Outer, str=out, class=ivanbasic.Outer@12bb4df8
+constructor Inner, str=non-static-inn, class=ivanbasic.Outer$Inner@4cc77c2e
+constructor Inner, str=non-static-inn, class=ivanbasic.Outer$Inner@7a7b0070
+constructor StaticInner, str=static inn, class=ivanbasic.Outer$StaticInner@39a054a5
+constructor StaticInner, str=static inn, class=ivanbasic.Outer$StaticInner@71bc1ae4
+Outer method doIt
+constructor Local, str=class-Local-in-method-doIt, class=ivanbasic.Outer$1Local@6ed3ef1
+constructor AbsInner, str=absin, class=ivanbasic.Outer$1@2437c6dc
+
+===============================================================
+Lesson #52 ivanbasic.java_11_21_300_InterfaceDefaultMethod
+===============================================================
+cat as run, speed=7
+cat as walk, speed=7
+cats inherited walk speed=5
+cats inherited run speed=10
+
+===============================================================
+Lesson #53 ivanbasic.java_11_21_400_InterfaceStaticMethod
+===============================================================
+Bunny, hop height=8
+
+===============================================================
+Lesson #54 ivanbasic.java_11_21_500_InterfacePrivatecMethod
+===============================================================
+
+Monday
+You have 10 hours left to make the appointment
+You have 8 hours left to make the appointment
+You have 5 hours left to make the appointment
+You're late!
+
+Saturday
+skip wakeup 
+skip breakfast
+You have 5 hours left to make the appointment
+You're late!
+
+===============================================================
+Lesson #55 ivanbasic.java_11_21_600_InterfacePrivatecStaticMethod
+===============================================================
+
+Inhale
+Performing stroke: backstroke
+Exhale
+
+Inhale
+Performing stroke: freestyle
+Exhale
+
+Inhale
+Performing stroke: butterfly
+Exhale
+
+===============================================================
+Lesson #56 ivanbasic.java_11_21_700_IntroducingFunctionalProgramming
+===============================================================
+Same as chapter 6
+
+===============================================================
+Lesson #57 ivanbasic.java_11_22_100_Annotations
+===============================================================
+
+class annotations
+@ivanbasic.Hazard(description="Wind Damage", danger=100)
+@ivanbasic.Alert()
+
+all fields annotations
+@ivanbasic.Ordinary() for public int ivanbasic.Tornado.t1
+@ivanbasic.Ordinary() for public static int ivanbasic.Tornado.t2
+@ivanbasic.Ordinary() for private int[] ivanbasic.Tornado.t3
+@ivanbasic.Special() for private int[] ivanbasic.Tornado.t3
+
+===============================================================
+Lesson #58 ivanbasic.java_11_23_000_FunctionalInterface3Ways
+===============================================================
+1. using class      :ivanbasic.SpeakUsingClass@63e31ee
+2. using lambda     :ivanbasic.java_11_23_000_FunctionalInterface3Ways$$Lambda$50/0x0000000800bc0440@68fb2c38
+3. method reference :ivanbasic.java_11_23_000_FunctionalInterface3Ways$$Lambda$51/0x0000000800bc0840@567d299b
+
+===============================================================
+Lesson #59 ivanbasic.java_11_23_100_UsingMethodReferences4formats
+===============================================================
+Static methods
+ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$52/0x0000000800bc0c40@6842775d
+ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$53/0x0000000800bc1040@64cee07
+
+Instance methods on a particular instance 
+ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$54/0x0000000800bc1440@6c629d6e
+ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$55/0x0000000800bc1840@3f102e87
+
+Instance methods on a parameter to be determined at runtime 
+ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$56/0x0000000800bc1c40@5f5a92bb
+ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$57/0x0000000800bc2040@51016012
+
+Constructors
+ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$58/0x0000000800bc2440@1517365b
+ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$59/0x0000000800bc2840@44e81672
+
+===============================================================
+Lesson #60 ivanbasic.java_11_23_200_UsingTheDiamondOperator
+===============================================================
+
+===============================================================
+Lesson #61 ivanbasic.java_11_23_300_ListAndLambda
+===============================================================
+[1, 2, 3, 4, 5]
+[2, 4, 6, 8, 10]
+
+===============================================================
+Lesson #62 ivanbasic.java_11_23_400_WorkingWithGenerics
+===============================================================
+
+===============================================================
+Lesson #63 ivanbasic.java_11_23_500_Wildcard
+===============================================================
+
+===============================================================
+Lesson #64 ivanbasic.java_11_24_100_BuiltInFunctionalInterfaces
+===============================================================
+Annie
+true
+true
+5
+5
+CHIRP
+CHIRP
+
+ivanbasic.java_11_24_100_BuiltInFunctionalInterfaces$$Lambda$61/0x0000000800bc3040@6aceb1a5
+ivanbasic.java_11_24_100_BuiltInFunctionalInterfaces$$Lambda$65/0x0000000800bc4440@2d6d8735
+ivanbasic.java_11_24_100_BuiltInFunctionalInterfaces$$Lambda$67/0x0000000800bc4c40@ba4d54
+ivanbasic.java_11_24_100_BuiltInFunctionalInterfaces$$Lambda$69/0x0000000800bc5440@12bc6874
+ivanbasic.java_11_24_100_BuiltInFunctionalInterfaces$$Lambda$71/0x0000000800bc5c40@de0a01f
+
+===============================================================
+Lesson #65 ivanbasic.java_11_24_200_ReturningAnOptional
+===============================================================
+false
+true
+23
+
+true
+false
+
+
+op1: 23
+op2 is empty 
+
+===============================================================
+Lesson #66 ivanbasic.java_11_24_300_FiniteStreams
+===============================================================
+java.util.stream.ReferencePipeline$Head@5d3411d
+java.util.stream.ReferencePipeline$Head@2471cca7
+java.util.stream.ReferencePipeline$Head@5fe5c6f
+java.util.stream.ReferencePipeline$Head@6979e8cb
+java.util.stream.ReferencePipeline$Head@763d9750
+
+===============================================================
+Lesson #67 ivanbasic.java_11_24_400_InfiniteStreams
+===============================================================
+1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 
+2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 
+
+===============================================================
+Lesson #68 ivanbasic.java_11_24_500_UsingCommonTerminalOperations
+===============================================================
+FINITY
+forEach: 1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 
+count: 25
+min : 1
+max : 49
+findAny : 1
+anyMatch : true
+reduce : 625
+filer : 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 
+map : (1) (3) (5) (7) (9) (11) (13) (15) (17) (19) (21) (23) (25) (27) (29) (31) (33) (35) (37) (39) (41) (43) (45) (47) (49) 
+skip limit forEach : 7 9 11 13 
+
+
+INFINITY
+skip limit forEach : 7 9 11 13 
+
+end
+
+===============================================================
+Lesson #69 ivanbasic.java_11_24_600_PrimitiveStreams
+===============================================================
+intStream.average()=4.5
+
+===============================================================
+Lesson #70 ivanbasic.java_11_24_700_AdvancedStreamPipelineConcepts
+===============================================================
+
+===============================================================
+Lesson #71 ivanbasic.java_11_25_100_Exceptions
+===============================================================
+try 1
+ catch ivanbasic.ExceptionPink
+ finaly 1
+try 2
+ catch ivanbasic.ExceptionYellow
+ finaly 2
+try 3
+ finaly 3
+try 4
+ finaly 4
+try 5
+ catch ivanbasic.ExceptionYellow
+ finaly 5
+try 6
+ catch ivanbasic.ExceptionYellow
+ finaly 6
+try 7
+ finaly 7
+try 8
+ catch ivanbasic.ExceptionYellow
+ finaly 8
+try 9
+ catch ivanbasic.ExceptionYellow
+ finaly 9
+
+===============================================================
+Lesson #72 ivanbasic.java_11_25_200_TryWithResources
+===============================================================
+Open monkey
+Try Block
+Closed: monkey
+Finally Block
+
+multiple resources:
+Open 1
+Open 2
+Open 3
+Try Block
+Closed: 3
+Closed: 2
+Closed: 1
+Finally Block
+
+===============================================================
+Lesson #73 ivanbasic.java_11_25_300_DeclaringAssertions
+===============================================================
+
+===============================================================
+Lesson #74 ivanbasic.java_11_25_400_WorkingWithDatesAndTimes
+===============================================================
+2021-03-17
+20:35:36.637939900
+2021-03-17T20:35:36.637939900
+19.04.2020 21:23
+
+===============================================================
+Lesson #75 ivanbasic.java_11_27_100_Concurrency
+===============================================================
+1 implementing interface Runnable
+2 extending class Thread
+3 Executors
+Runnable r2
+Runnable r3
+java.util.concurrent.ThreadPoolExecutor@47f37ef1[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+java.util.concurrent.Executors$FinalizableDelegatedExecutorService@5a01ccaa
+shutdown Executors
+While  Executors
+sleep  10
+ivanbasic.ImlementedRunable@37789ded
+sleep  20
+Thread[Thread-4,5,main]
+sleep  10
+sleep  10
+ivanbasic.ImlementedRunable@37789ded
+ivanbasic.ImlementedRunable@37789ded
+sleep  30
+sleep  30
+sleep  50
+service 1 while !isTerminated
+sleep  30
+sleep  50
+service 2 while !isTerminated
+--- END ---
+
+===============================================================
+Lesson #76 ivanbasic.java_11_27_200_SubmitAndFuture
+===============================================================
+java.util.concurrent.Executors$FinalizableDelegatedExecutorService@1fbc7afb
+java.util.concurrent.FutureTask@c818063[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@5ba23b66[Wrapped task = ivanbasic.java_11_27_200_SubmitAndFuture$$Lambda$112/0x0000000800bd0840@2ff4f00f]]
+service3 !-null,   shutdown
+
+===============================================================
+Lesson #77 ivanbasic.java_11_27_300_Synchronization
+===============================================================
+lambda runable
+1 
+..................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................2 
+...............................................................................................................................................................................................................................3 
+............................................................................................................................4 
+.......................................5 
+......................................................................................................................................................................................................................................................................................................................................................................................................6 
+7 
+...........................8 
+.....................................................................................................................................................................................................................................................................................9 
+.......................................................................................................................10 
+...............
+===============================================================
+Lesson #78 ivanbasic.java_11_27_400_UsingConcurrentCollections
+===============================================================
+
+===============================================================
+Lesson #79 ivanbasic.java_11_27_500_WorkingWithParallelStreams
+===============================================================
+7 6 8 3 5 2 9 4 1 
+Time: 0.324 seconds
+
+===============================================================
+Lesson #80 ivanbasic.java_11_28_100_IOAbstract
+===============================================================
+
+===============================================================
+Lesson #81 ivanbasic.java_11_28_200_IOConcrete
+===============================================================
+
+===============================================================
+Lesson #82 ivanbasic.java_11_29_100_NIO2
+===============================================================
+.classpath
+.git
+.gitattributes
+.gitignore
+.project
+.settings
+bin
+README.md
+src
+
+===============================================================
+Lesson #83 ivanbasic.java_11_30_100_JDBC
+===============================================================
+
+===============================================================
+Lesson #84 ivanbasic.java_11_31_100_Security
+===============================================================
+Limiting Accessibility: private fields instead of public
+Restricting Extensibility: final class
+Creating Immutable Objects: final class, private final fields, without setters, just constructors...
+Cloning Objects
+Sql Injection, Whitelist vs. Blacklist...
+Confidential Information...
