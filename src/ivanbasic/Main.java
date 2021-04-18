@@ -57,6 +57,7 @@ public class Main {
 		//callAllStatic();
 		callAllDynamic(0);		
 		
+
 	}
 	
 	
@@ -65,6 +66,9 @@ public class Main {
 	public static void callAllStatic() {
 		new java_11_00_001_HelloWorld().main();
 		new java_11_00_002_Version().main();		
+	
+		new java_11_05_041_ArraysRowsAndCols().main();
+		
 		// etc...
 	}
 	

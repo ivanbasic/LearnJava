@@ -20,10 +20,10 @@ Lesson #2 ivanbasic.java_11_00_002_Version
 ===============================================================
 Lesson #3 ivanbasic.java_11_01_001_WelcomeToJava
 ===============================================================
-random 0-9: 9
-java.utl.Date: Wed Mar 17 20:35:36 CET 2021
+random 0-9: 2
+java.utl.Date: Sun Apr 18 23:32:41 CEST 2021
 java.sql.Date: 1970-01-01
-ivanbasic.FieldsAndMethodsCanGoInEitherOrder@33833882
+ivanbasic.FieldsAndMethodsCanGoInEitherOrder@16b3fc9e
 
 ===============================================================
 Lesson #4 ivanbasic.java_11_02_001_CreatingObjects
@@ -106,7 +106,7 @@ double
 ===============================================================
 Lesson #8 ivanbasic.java_11_02_010_ReferenceTypes
 ===============================================================
-Wed Mar 17 20:35:36 CET 2021
+Sun Apr 18 23:32:41 CEST 2021
 How are you?
 null
 
@@ -170,7 +170,39 @@ Lesson #15 ivanbasic.java_11_05_040_Arrays
 [[10, 20], [100, -200]]
 
 ===============================================================
-Lesson #16 ivanbasic.java_11_05_050_ArrayList
+Lesson #16 ivanbasic.java_11_05_041_ArraysRowsAndCols
+===============================================================
+Declare and populate...
+Result
+[[11, 12, 13, 14, 15, 16, 17, 18]
+[21, 22, 23, 24, 25, 26, 27, 28]
+[31, 32, 33, 34, 35, 36, 37, 38]
+[41, 42, 43, 44, 45, 46, 47, 48]
+[51, 52, 53, 54, 55, 56, 57, 58]]
+
+Sum of rows
+Sumiranje po redovima
+116
+196
+276
+356
+436
+=1380
+
+Sum of cols
+Sumiranje po kolonama
+155
+160
+165
+170
+175
+180
+185
+190
+=1380
+
+===============================================================
+Lesson #17 ivanbasic.java_11_05_050_ArrayList
 ===============================================================
 [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
 [0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
@@ -182,7 +214,7 @@ Using Varargs to Create a List
 [one, two]
 
 ===============================================================
-Lesson #17 ivanbasic.java_11_05_060_Sets
+Lesson #18 ivanbasic.java_11_05_060_Sets
 ===============================================================
 Set of Integer's
 true
@@ -196,7 +228,7 @@ Set of Anything's
 true
 true
 true
-[ivanbasic.Anything@3b22cdd0, ivanbasic.Anything@5fdef03a, ivanbasic.Anything@5680a178]
+[ivanbasic.Anything@65ae6ba4, ivanbasic.Anything@4d591d15, ivanbasic.Anything@1e81f4dc]
 
 Set of Something's, overrides java.lang.Object.hashCode, overrides java.lang.Object.equals 
 true
@@ -206,16 +238,16 @@ false
 [1, 2]
 
 ===============================================================
-Lesson #18 ivanbasic.java_11_05_070_Maps
+Lesson #19 ivanbasic.java_11_05_070_Maps
 ===============================================================
 koala bamboo
 cat bird
 cow grass
 {koala=bamboo, cat=bird, cow=grass}
-{ivanbasic.AnythingAgain@4d591d15=202, ivanbasic.AnythingAgain@1e81f4dc=102}
+{ivanbasic.AnythingAgain@48cf768c=102, ivanbasic.AnythingAgain@59f95c5d=202}
 
 ===============================================================
-Lesson #19 ivanbasic.java_11_06_010_Lambdas
+Lesson #20 ivanbasic.java_11_06_010_Lambdas
 ===============================================================
 TraditionalSearch, print if Hopper
 kangaroo rabbit 
@@ -231,14 +263,14 @@ LambdaSearchTwo, print if Hopper
 kangaroo rabbit 
 
 ===============================================================
-Lesson #20 ivanbasic.java_11_06_020_Predicate
+Lesson #21 ivanbasic.java_11_06_020_Predicate
 ===============================================================
 fish me 
 fish me 
 fish me 
 
 ===============================================================
-Lesson #21 ivanbasic.java_11_06_030_Consumer
+Lesson #22 ivanbasic.java_11_06_030_Consumer
 ===============================================================
 The Consumer functional interface: void accept(T t)
 1
@@ -252,21 +284,21 @@ accepting more *7, *8
 1344
 
 ===============================================================
-Lesson #22 ivanbasic.java_11_06_040_Supplier
+Lesson #23 ivanbasic.java_11_06_040_Supplier
 ===============================================================
-random #1 = 0
-random #2 = 4
-random #3 = 3
-random #4 = 0
-random #5 = 8
+random #1 = 3
+random #2 = 7
+random #3 = 8
+random #4 = 8
+random #5 = 1
 
 ===============================================================
-Lesson #23 ivanbasic.java_11_06_050_Comparator
+Lesson #24 ivanbasic.java_11_06_050_Comparator
 ===============================================================
 Compare 11 & 17 :-6
 
 ===============================================================
-Lesson #24 ivanbasic.java_11_06_060_CallingAPIsWithLambdas
+Lesson #25 ivanbasic.java_11_06_060_CallingAPIsWithLambdas
 ===============================================================
 List and Set declare a removeIf() method that takes a Predicate (boolean)
 [long ear, floppy, hoppy]
@@ -284,7 +316,7 @@ floppy
 hoppy
 
 ===============================================================
-Lesson #25 ivanbasic.java_11_07_030_WorkingWithVarargs
+Lesson #26 ivanbasic.java_11_07_030_WorkingWithVarargs
 ===============================================================
 walk(int start, int... nums), length of nums:
 0
@@ -293,7 +325,7 @@ walk(int start, int... nums), length of nums:
 2
 
 ===============================================================
-Lesson #26 ivanbasic.java_11_07_050_PassingDataAmongMethods
+Lesson #27 ivanbasic.java_11_07_050_PassingDataAmongMethods
 ===============================================================
 int       parInt	=1
 String    parString	=a
@@ -311,21 +343,21 @@ int[]     parArray	=[12345678, 2]
 SomeClass parClass	=9999999
 
 ===============================================================
-Lesson #27 ivanbasic.java_11_07_070_OverloadingMethods
+Lesson #28 ivanbasic.java_11_07_070_OverloadingMethods
 ===============================================================
 142
 ===============================================================
-Lesson #28 ivanbasic.java_11_07_090_EncapsulatingData
+Lesson #29 ivanbasic.java_11_07_090_EncapsulatingData
 ===============================================================
 Just private, getter & setter 
 
 ===============================================================
-Lesson #29 ivanbasic.java_11_08_010_This
+Lesson #30 ivanbasic.java_11_08_010_This
 ===============================================================
 The color is desolate
 
 ===============================================================
-Lesson #30 ivanbasic.java_11_08_020_Super
+Lesson #31 ivanbasic.java_11_08_020_Super
 ===============================================================
 child doIt
 parent doIt
@@ -333,14 +365,14 @@ child size
 parent size
 
 ===============================================================
-Lesson #31 ivanbasic.java_11_08_025_ConsCallsConsThis
+Lesson #32 ivanbasic.java_11_08_025_ConsCallsConsThis
 ===============================================================
 Cons II 1 0
 CONS I
 Cons II 1 2
 
 ===============================================================
-Lesson #32 ivanbasic.java_11_08_030_PrivateConstructor
+Lesson #33 ivanbasic.java_11_08_030_PrivateConstructor
 ===============================================================
 Calling private constructor 789+AAAAAA
 ...from public cons
@@ -350,17 +382,17 @@ from (static) method:
 Calling private constructor 45+MN
 
 ===============================================================
-Lesson #33 ivanbasic.java_11_08_035_SuperCons
+Lesson #34 ivanbasic.java_11_08_035_SuperCons
 ===============================================================
 first
 second
 
 ===============================================================
-Lesson #34 ivanbasic.java_11_08_100_ClassInitialization
+Lesson #35 ivanbasic.java_11_08_100_ClassInitialization
 ===============================================================
 
 ===============================================================
-Lesson #35 ivanbasic.java_11_08_110_InstanceInitialization
+Lesson #36 ivanbasic.java_11_08_110_InstanceInitialization
 ===============================================================
 Creating new InstanceC extends InstanceB extends InstanceA
 Constructor, InstanceA
@@ -368,36 +400,36 @@ Constructor, InstanceB
 Constructor, InstanceC
 
 ===============================================================
-Lesson #36 ivanbasic.java_11_08_500_OverridingMethod
+Lesson #37 ivanbasic.java_11_08_500_OverridingMethod
 ===============================================================
 Number Of Humps = 1
 Number Of Humps = 2
 Number Of Humps = 2
 
 ===============================================================
-Lesson #37 ivanbasic.java_11_08_510_OverridingGenericMethod
+Lesson #38 ivanbasic.java_11_08_510_OverridingGenericMethod
 ===============================================================
 Anteater
 
 ===============================================================
-Lesson #38 ivanbasic.java_11_08_520_GenericReturnTypes
+Lesson #39 ivanbasic.java_11_08_520_GenericReturnTypes
 ===============================================================
 
 ===============================================================
-Lesson #39 ivanbasic.java_11_08_530_RedeclaringPrivateMethods
+Lesson #40 ivanbasic.java_11_08_530_RedeclaringPrivateMethods
 ===============================================================
 private doIt, PrivateAny.
 private doIt, PrivateRyan. A Separate and independent method. Not an overridden version.
 
 ===============================================================
-Lesson #40 ivanbasic.java_11_08_540_HidingStaticMethods
+Lesson #41 ivanbasic.java_11_08_540_HidingStaticMethods
 ===============================================================
 You can't mix static and non-static methods
 public static void doIt() Bear
 public static void doIt() Panda. >>Hiding<<. Tis is not considered an overridden method. 
 
 ===============================================================
-Lesson #41 ivanbasic.java_11_08_900_ReviewQuestions
+Lesson #42 ivanbasic.java_11_08_900_ReviewQuestions
 ===============================================================
 50
 SpiderSpiderArthropod
@@ -410,32 +442,32 @@ Child method setName=Olivia
 Olivia Sophia
 
 
-Class1 c11 ivanbasic.Class1@707f7052
+Class1 c11 ivanbasic.Class1@21588809
 method doIt Class1
 instanceVariable Class1
 
-Class1 c12 ivanbasic.Class2@11028347
+Class1 c12 ivanbasic.Class2@2aae9190
 method doIt Class2
 instanceVariable Class1
 
-Class2 c22 ivanbasic.Class2@14899482
+Class2 c22 ivanbasic.Class2@2f333739
 method doIt Class2
 instanceVariable Class2
 
 casting c22....
-Class1 c100 ivanbasic.Class2@14899482
+Class1 c100 ivanbasic.Class2@2f333739
 method doIt Class2
 instanceVariable Class1
 
 
 ===============================================================
-Lesson #42 ivanbasic.java_11_09_100_AbstractClasses
+Lesson #43 ivanbasic.java_11_09_100_AbstractClasses
 ===============================================================
-Constructor AbstractSub0 ivanbasic.Concrete0@21588809
-Constructor AbstractSub0 ivanbasic.Concrete1@2aae9190
+Constructor AbstractSub0 ivanbasic.Concrete0@77468bd9
+Constructor AbstractSub0 ivanbasic.Concrete1@12bb4df8
 
 ===============================================================
-Lesson #43 ivanbasic.java_11_09_200_Interfaces
+Lesson #44 ivanbasic.java_11_09_200_Interfaces
 ===============================================================
 doIt is implemented.
 default method
@@ -444,15 +476,15 @@ static field of TheInterface
 interface ti instanceof class ChildOf? true
 
 ===============================================================
-Lesson #44 ivanbasic.java_11_09_900_ReviewQuestions
+Lesson #45 ivanbasic.java_11_09_900_ReviewQuestions
 ===============================================================
 
 ===============================================================
-Lesson #45 ivanbasic.java_11_10_100_Exceptions
+Lesson #46 ivanbasic.java_11_10_100_Exceptions
 ===============================================================
 
 ===============================================================
-Lesson #46 ivanbasic.java_11_10_200_Exceptions
+Lesson #47 ivanbasic.java_11_10_200_Exceptions
 ===============================================================
 try 2
 finally 2
@@ -468,7 +500,7 @@ This catch block is optional
 This finally block is optional
 
 ===============================================================
-Lesson #47 ivanbasic.java_11_11_100_Modules
+Lesson #48 ivanbasic.java_11_11_100_Modules
 ===============================================================
 eclipse: project root >configure>create module-info.java 
 
@@ -476,7 +508,7 @@ exports pckg (to  mdl)
 requires, requires transitive mdl
 
 ===============================================================
-Lesson #48 ivanbasic.java_11_21_100_Enums
+Lesson #49 ivanbasic.java_11_21_100_Enums
 ===============================================================
 SUMMER 2
 
@@ -487,30 +519,30 @@ FALL 3
 
 
 ===============================================================
-Lesson #49 ivanbasic.java_11_21_110_UsingEnumsInSwitchStatements
+Lesson #50 ivanbasic.java_11_21_110_UsingEnumsInSwitchStatements
 ===============================================================
 default
 
 ===============================================================
-Lesson #50 ivanbasic.java_11_21_120_EnumConstructor
+Lesson #51 ivanbasic.java_11_21_120_EnumConstructor
 ===============================================================
 the constructor argument list match the declaration-of-constants argument list.
 but Selikoff didn't explain why
 
 ===============================================================
-Lesson #51 ivanbasic.java_11_21_200_NestedClasses4Flavors
+Lesson #52 ivanbasic.java_11_21_200_NestedClasses4Flavors
 ===============================================================
-constructor Outer, str=out, class=ivanbasic.Outer@12bb4df8
-constructor Inner, str=non-static-inn, class=ivanbasic.Outer$Inner@4cc77c2e
-constructor Inner, str=non-static-inn, class=ivanbasic.Outer$Inner@7a7b0070
-constructor StaticInner, str=static inn, class=ivanbasic.Outer$StaticInner@39a054a5
-constructor StaticInner, str=static inn, class=ivanbasic.Outer$StaticInner@71bc1ae4
+constructor Outer, str=out, class=ivanbasic.Outer@39a054a5
+constructor Inner, str=non-static-inn, class=ivanbasic.Outer$Inner@71bc1ae4
+constructor Inner, str=non-static-inn, class=ivanbasic.Outer$Inner@6ed3ef1
+constructor StaticInner, str=static inn, class=ivanbasic.Outer$StaticInner@2437c6dc
+constructor StaticInner, str=static inn, class=ivanbasic.Outer$StaticInner@1f89ab83
 Outer method doIt
-constructor Local, str=class-Local-in-method-doIt, class=ivanbasic.Outer$1Local@6ed3ef1
-constructor AbsInner, str=absin, class=ivanbasic.Outer$1@2437c6dc
+constructor Local, str=class-Local-in-method-doIt, class=ivanbasic.Outer$1Local@e73f9ac
+constructor AbsInner, str=absin, class=ivanbasic.Outer$1@61064425
 
 ===============================================================
-Lesson #52 ivanbasic.java_11_21_300_InterfaceDefaultMethod
+Lesson #53 ivanbasic.java_11_21_300_InterfaceDefaultMethod
 ===============================================================
 cat as run, speed=7
 cat as walk, speed=7
@@ -518,12 +550,12 @@ cats inherited walk speed=5
 cats inherited run speed=10
 
 ===============================================================
-Lesson #53 ivanbasic.java_11_21_400_InterfaceStaticMethod
+Lesson #54 ivanbasic.java_11_21_400_InterfaceStaticMethod
 ===============================================================
 Bunny, hop height=8
 
 ===============================================================
-Lesson #54 ivanbasic.java_11_21_500_InterfacePrivatecMethod
+Lesson #55 ivanbasic.java_11_21_500_InterfacePrivatecMethod
 ===============================================================
 
 Monday
@@ -539,7 +571,7 @@ You have 5 hours left to make the appointment
 You're late!
 
 ===============================================================
-Lesson #55 ivanbasic.java_11_21_600_InterfacePrivatecStaticMethod
+Lesson #56 ivanbasic.java_11_21_600_InterfacePrivatecStaticMethod
 ===============================================================
 
 Inhale
@@ -555,12 +587,12 @@ Performing stroke: butterfly
 Exhale
 
 ===============================================================
-Lesson #56 ivanbasic.java_11_21_700_IntroducingFunctionalProgramming
+Lesson #57 ivanbasic.java_11_21_700_IntroducingFunctionalProgramming
 ===============================================================
 Same as chapter 6
 
 ===============================================================
-Lesson #57 ivanbasic.java_11_22_100_Annotations
+Lesson #58 ivanbasic.java_11_22_100_Annotations
 ===============================================================
 
 class annotations
@@ -574,51 +606,51 @@ all fields annotations
 @ivanbasic.Special() for private int[] ivanbasic.Tornado.t3
 
 ===============================================================
-Lesson #58 ivanbasic.java_11_23_000_FunctionalInterface3Ways
+Lesson #59 ivanbasic.java_11_23_000_FunctionalInterface3Ways
 ===============================================================
-1. using class      :ivanbasic.SpeakUsingClass@63e31ee
-2. using lambda     :ivanbasic.java_11_23_000_FunctionalInterface3Ways$$Lambda$50/0x0000000800bc0440@68fb2c38
-3. method reference :ivanbasic.java_11_23_000_FunctionalInterface3Ways$$Lambda$51/0x0000000800bc0840@567d299b
+1. using class      :ivanbasic.SpeakUsingClass@2eafffde
+2. using lambda     :ivanbasic.java_11_23_000_FunctionalInterface3Ways$$Lambda$50/0x0000000800bc0440@59690aa4
+3. method reference :ivanbasic.java_11_23_000_FunctionalInterface3Ways$$Lambda$51/0x0000000800bc0840@6842775d
 
 ===============================================================
-Lesson #59 ivanbasic.java_11_23_100_UsingMethodReferences4formats
+Lesson #60 ivanbasic.java_11_23_100_UsingMethodReferences4formats
 ===============================================================
 Static methods
-ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$52/0x0000000800bc0c40@6842775d
-ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$53/0x0000000800bc1040@64cee07
+ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$52/0x0000000800bc0c40@1761e840
+ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$53/0x0000000800bc1040@5ecddf8f
 
 Instance methods on a particular instance 
-ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$54/0x0000000800bc1440@6c629d6e
-ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$55/0x0000000800bc1840@3f102e87
+ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$54/0x0000000800bc1440@27abe2cd
+ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$55/0x0000000800bc1840@6fdb1f78
 
 Instance methods on a parameter to be determined at runtime 
-ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$56/0x0000000800bc1c40@5f5a92bb
-ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$57/0x0000000800bc2040@51016012
+ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$56/0x0000000800bc1c40@29444d75
+ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$57/0x0000000800bc2040@1517365b
 
 Constructors
-ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$58/0x0000000800bc2440@1517365b
-ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$59/0x0000000800bc2840@44e81672
+ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$58/0x0000000800bc2440@60215eee
+ivanbasic.java_11_23_100_UsingMethodReferences4formats$$Lambda$59/0x0000000800bc2840@65e579dc
 
 ===============================================================
-Lesson #60 ivanbasic.java_11_23_200_UsingTheDiamondOperator
+Lesson #61 ivanbasic.java_11_23_200_UsingTheDiamondOperator
 ===============================================================
 
 ===============================================================
-Lesson #61 ivanbasic.java_11_23_300_ListAndLambda
+Lesson #62 ivanbasic.java_11_23_300_ListAndLambda
 ===============================================================
 [1, 2, 3, 4, 5]
 [2, 4, 6, 8, 10]
 
 ===============================================================
-Lesson #62 ivanbasic.java_11_23_400_WorkingWithGenerics
+Lesson #63 ivanbasic.java_11_23_400_WorkingWithGenerics
 ===============================================================
 
 ===============================================================
-Lesson #63 ivanbasic.java_11_23_500_Wildcard
+Lesson #64 ivanbasic.java_11_23_500_Wildcard
 ===============================================================
 
 ===============================================================
-Lesson #64 ivanbasic.java_11_24_100_BuiltInFunctionalInterfaces
+Lesson #65 ivanbasic.java_11_24_100_BuiltInFunctionalInterfaces
 ===============================================================
 Annie
 true
@@ -628,14 +660,14 @@ true
 CHIRP
 CHIRP
 
-ivanbasic.java_11_24_100_BuiltInFunctionalInterfaces$$Lambda$61/0x0000000800bc3040@6aceb1a5
-ivanbasic.java_11_24_100_BuiltInFunctionalInterfaces$$Lambda$65/0x0000000800bc4440@2d6d8735
-ivanbasic.java_11_24_100_BuiltInFunctionalInterfaces$$Lambda$67/0x0000000800bc4c40@ba4d54
-ivanbasic.java_11_24_100_BuiltInFunctionalInterfaces$$Lambda$69/0x0000000800bc5440@12bc6874
-ivanbasic.java_11_24_100_BuiltInFunctionalInterfaces$$Lambda$71/0x0000000800bc5c40@de0a01f
+ivanbasic.java_11_24_100_BuiltInFunctionalInterfaces$$Lambda$61/0x0000000800bc3040@12bc6874
+ivanbasic.java_11_24_100_BuiltInFunctionalInterfaces$$Lambda$65/0x0000000800bc4440@de0a01f
+ivanbasic.java_11_24_100_BuiltInFunctionalInterfaces$$Lambda$67/0x0000000800bc4c40@4c75cab9
+ivanbasic.java_11_24_100_BuiltInFunctionalInterfaces$$Lambda$69/0x0000000800bc5440@1ef7fe8e
+ivanbasic.java_11_24_100_BuiltInFunctionalInterfaces$$Lambda$71/0x0000000800bc5c40@6f79caec
 
 ===============================================================
-Lesson #65 ivanbasic.java_11_24_200_ReturningAnOptional
+Lesson #66 ivanbasic.java_11_24_200_ReturningAnOptional
 ===============================================================
 false
 true
@@ -649,22 +681,22 @@ op1: 23
 op2 is empty 
 
 ===============================================================
-Lesson #66 ivanbasic.java_11_24_300_FiniteStreams
+Lesson #67 ivanbasic.java_11_24_300_FiniteStreams
 ===============================================================
-java.util.stream.ReferencePipeline$Head@5d3411d
-java.util.stream.ReferencePipeline$Head@2471cca7
-java.util.stream.ReferencePipeline$Head@5fe5c6f
 java.util.stream.ReferencePipeline$Head@6979e8cb
 java.util.stream.ReferencePipeline$Head@763d9750
+java.util.stream.ReferencePipeline$Head@5c0369c4
+java.util.stream.ReferencePipeline$Head@2be94b0f
+java.util.stream.ReferencePipeline$Head@d70c109
 
 ===============================================================
-Lesson #67 ivanbasic.java_11_24_400_InfiniteStreams
+Lesson #68 ivanbasic.java_11_24_400_InfiniteStreams
 ===============================================================
 1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 
 2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 
 
 ===============================================================
-Lesson #68 ivanbasic.java_11_24_500_UsingCommonTerminalOperations
+Lesson #69 ivanbasic.java_11_24_500_UsingCommonTerminalOperations
 ===============================================================
 FINITY
 forEach: 1 3 5 7 9 11 13 15 17 19 21 23 25 27 29 31 33 35 37 39 41 43 45 47 49 
@@ -685,44 +717,43 @@ skip limit forEach : 7 9 11 13
 end
 
 ===============================================================
-Lesson #69 ivanbasic.java_11_24_600_PrimitiveStreams
+Lesson #70 ivanbasic.java_11_24_600_PrimitiveStreams
 ===============================================================
 intStream.average()=4.5
 
 ===============================================================
-Lesson #70 ivanbasic.java_11_24_700_AdvancedStreamPipelineConcepts
+Lesson #71 ivanbasic.java_11_24_700_AdvancedStreamPipelineConcepts
 ===============================================================
 
 ===============================================================
-Lesson #71 ivanbasic.java_11_25_100_Exceptions
+Lesson #72 ivanbasic.java_11_25_100_Exceptions
 ===============================================================
 try 1
- catch ivanbasic.ExceptionPink
+ catch ivanbasic.ExceptionYellow
  finaly 1
 try 2
- catch ivanbasic.ExceptionYellow
  finaly 2
 try 3
  finaly 3
 try 4
  finaly 4
 try 5
- catch ivanbasic.ExceptionYellow
  finaly 5
 try 6
- catch ivanbasic.ExceptionYellow
+ catch ivanbasic.ExceptionPink
  finaly 6
 try 7
+ catch ivanbasic.ExceptionPink
  finaly 7
 try 8
  catch ivanbasic.ExceptionYellow
  finaly 8
 try 9
- catch ivanbasic.ExceptionYellow
+ catch ivanbasic.ExceptionPink
  finaly 9
 
 ===============================================================
-Lesson #72 ivanbasic.java_11_25_200_TryWithResources
+Lesson #73 ivanbasic.java_11_25_200_TryWithResources
 ===============================================================
 Open monkey
 Try Block
@@ -740,105 +771,107 @@ Closed: 1
 Finally Block
 
 ===============================================================
-Lesson #73 ivanbasic.java_11_25_300_DeclaringAssertions
+Lesson #74 ivanbasic.java_11_25_300_DeclaringAssertions
 ===============================================================
 
 ===============================================================
-Lesson #74 ivanbasic.java_11_25_400_WorkingWithDatesAndTimes
+Lesson #75 ivanbasic.java_11_25_400_WorkingWithDatesAndTimes
 ===============================================================
-2021-03-17
-20:35:36.637939900
-2021-03-17T20:35:36.637939900
+2021-04-18
+23:32:41.539319100
+2021-04-18T23:32:41.539319100
 19.04.2020 21:23
 
 ===============================================================
-Lesson #75 ivanbasic.java_11_27_100_Concurrency
+Lesson #76 ivanbasic.java_11_27_100_Concurrency
 ===============================================================
 1 implementing interface Runnable
 2 extending class Thread
 3 Executors
 Runnable r2
+java.util.concurrent.ThreadPoolExecutor@19bb089b[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
+java.util.concurrent.Executors$FinalizableDelegatedExecutorService@4563e9ab
 Runnable r3
-java.util.concurrent.ThreadPoolExecutor@47f37ef1[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0]
-java.util.concurrent.Executors$FinalizableDelegatedExecutorService@5a01ccaa
+sleep  10
+ivanbasic.ImlementedRunable@48fe58f3
 shutdown Executors
 While  Executors
 sleep  10
-ivanbasic.ImlementedRunable@37789ded
+sleep  10
+ivanbasic.ImlementedRunable@48fe58f3
+ivanbasic.ImlementedRunable@48fe58f3
 sleep  20
 Thread[Thread-4,5,main]
-sleep  10
-sleep  10
-ivanbasic.ImlementedRunable@37789ded
-ivanbasic.ImlementedRunable@37789ded
+sleep  30
 sleep  30
 sleep  30
 sleep  50
 service 1 while !isTerminated
-sleep  30
-sleep  50
-service 2 while !isTerminated
 --- END ---
 
 ===============================================================
-Lesson #76 ivanbasic.java_11_27_200_SubmitAndFuture
+Lesson #77 ivanbasic.java_11_27_200_SubmitAndFuture
 ===============================================================
-java.util.concurrent.Executors$FinalizableDelegatedExecutorService@1fbc7afb
-java.util.concurrent.FutureTask@c818063[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@5ba23b66[Wrapped task = ivanbasic.java_11_27_200_SubmitAndFuture$$Lambda$112/0x0000000800bd0840@2ff4f00f]]
+java.util.concurrent.Executors$FinalizableDelegatedExecutorService@66d33a
+java.util.concurrent.FutureTask@7d417077[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@3f0ee7cb[Wrapped task = ivanbasic.java_11_27_200_SubmitAndFuture$$Lambda$112/0x0000000800bd0840@75bd9247]]
 service3 !-null,   shutdown
 
 ===============================================================
-Lesson #77 ivanbasic.java_11_27_300_Synchronization
+Lesson #78 ivanbasic.java_11_27_300_Synchronization
 ===============================================================
 lambda runable
 1 
-..................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................2 
-...............................................................................................................................................................................................................................3 
-............................................................................................................................4 
-.......................................5 
-......................................................................................................................................................................................................................................................................................................................................................................................................6 
-7 
-...........................8 
-.....................................................................................................................................................................................................................................................................................9 
-.......................................................................................................................10 
-...............
+................................................................................................................................................................................................................................................................2 
+..............................................................................................................................................................................................................................................................................................................................................3 
+4 
+........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................5 
+....................6 
+.....................................................................................................7 
+.............................................................................8 
+...........................................................................................................................................................................................................................9 
+...................................................................................................................10 
+.
 ===============================================================
-Lesson #78 ivanbasic.java_11_27_400_UsingConcurrentCollections
-===============================================================
-
-===============================================================
-Lesson #79 ivanbasic.java_11_27_500_WorkingWithParallelStreams
-===============================================================
-7 6 8 3 5 2 9 4 1 
-Time: 0.324 seconds
-
-===============================================================
-Lesson #80 ivanbasic.java_11_28_100_IOAbstract
+Lesson #79 ivanbasic.java_11_27_400_UsingConcurrentCollections
 ===============================================================
 
 ===============================================================
-Lesson #81 ivanbasic.java_11_28_200_IOConcrete
+Lesson #80 ivanbasic.java_11_27_500_WorkingWithParallelStreams
+===============================================================
+2 6 8 3 5 1 4 9 7 
+Time: 0.318 seconds
+
+===============================================================
+Lesson #81 ivanbasic.java_11_28_100_IOAbstract
 ===============================================================
 
 ===============================================================
-Lesson #82 ivanbasic.java_11_29_100_NIO2
+Lesson #82 ivanbasic.java_11_28_200_IOConcrete
+===============================================================
+
+===============================================================
+Lesson #83 ivanbasic.java_11_29_100_NIO2
 ===============================================================
 .classpath
 .git
 .gitattributes
-.gitignore
 .project
 .settings
 bin
-README.md
 src
 
 ===============================================================
-Lesson #83 ivanbasic.java_11_30_100_JDBC
+Lesson #84 ivanbasic.java_11_29_101_Recursively
+===============================================================
+src
+src\ivanbasic
+
+===============================================================
+Lesson #85 ivanbasic.java_11_30_100_JDBC
 ===============================================================
 
 ===============================================================
-Lesson #84 ivanbasic.java_11_31_100_Security
+Lesson #86 ivanbasic.java_11_31_100_Security
 ===============================================================
 Limiting Accessibility: private fields instead of public
 Restricting Extensibility: final class
